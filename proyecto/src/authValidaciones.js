@@ -35,8 +35,8 @@ export async function registrarUsuarioSeguro(username, email, password, confirma
         .from("estudiantes")
         .select("id")
         .or(`correo.eq.${email},nombre.eq.${username}`);
-
-    if (existeUsuario.length > 0) {
+    
+    if (existeUsuario > 0) {
         return { error: "El usuario o correo ya está registrado." };
     }
 

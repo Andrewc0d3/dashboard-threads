@@ -5,6 +5,9 @@ import { mostrarFeed } from './posts.js';
 import { mostrarUser } from './user.js';
 import { mostrarAdmin } from './admin.js';
 import { supabase } from './supabase.js';
+//import { mvp } from './mvp.js';
+
+
 
 const routes = {
   registro: mostrarRegistro,
